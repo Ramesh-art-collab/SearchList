@@ -20,7 +20,7 @@ const Login = () => {
 
     const [error, setError] = useState<string | null>(null);
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (e: any) => {
         const { name, value } = e.target;
         setForm(({...form, [name]: value }));
     };
